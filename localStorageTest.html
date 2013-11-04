@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<script src="./seed.js" data-config="{combine:true}"></script>
+<script src="./localPlug.js"></script>
+<script>
+    KISSY.config('packages', {
+        bulk: {
+            base: '../'
+        }
+    });
+    var Mods = [];
+</script>
+<a class="J_clear" href="#">清空localStorage并刷新</a>
+<script>
+    var S=KISSY;
+    var nodes= S.makeArray(document.querySelectorAll('.mod'));
+
+
+    var clearBtn = document.getElementsByClassName("J_clear")[0];
+    if (clearBtn.addEventListener){
+        clearBtn.addEventListener('click', clearStorage, false); 
+    } else if (clearBtn.attachEvent){
+        clearBtn.attachEvent('onclick', clearStorage);
+    }
+
+    function clearStorage(){
+        localStorage.clear();
+        location.reload();
+    }
+
+    //test start here
+    var startTime = S.now();
+    S.use(["bulk/a","bulk/b"],function(){
+        var args = S.makeArray(arguments).slice(1);
+        S.each(args, function (a, i) {
+            a.init();
+        });
+        alert("time used : " + (S.now() - startTime) + " ms") ;
+    });
+
+</script>

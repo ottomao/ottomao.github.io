@@ -1,4 +1,6 @@
 ottomao.github.io
 =================
 
-playground
+it's just a playground.
+
+ottomao@gmail.com
