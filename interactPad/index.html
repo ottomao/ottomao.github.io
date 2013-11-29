@@ -1,3 +1,4 @@
+    <title>canvas互动-demo</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="http://g.tbcdn.cn/kissy/k/1.3.2/seed-min.js"></script>
     <link rel="stylesheet" type="text/css" href="./index.css">
@@ -81,9 +82,9 @@
                 // var itemEl1 = "http://localhost/mods/dog.jpg";   // document.getElementById("item1").src;
                 // var itemEl2 = "http://localhost/mods/item2.png"; // document.getElementById("item2").src;
 
-                var frameEl = "http://gtms01.alicdn.com/tps/i1/T14GxoXy8jXXaMrwve-700-430.png";
-                var itemEl1 = "http://gtms01.alicdn.com/tps/i1/T1oVxmXqVhXXb4HOvo-600-375.jpg";
-                var itemEl2 = "http://gtms01.alicdn.com/tps/i1/T1WuhmXD8hXXaeHbsb-100-100.png";
+                var frameEl = "http://ottomao.github.io/interactPad/frame.png";
+                var itemEl1 = "http://ottomao.github.io/interactPad/dog.jpg";
+                var itemEl2 = "http://ottomao.github.io/interactPad/item2.png";
 
                 //初始化绘图板
                 //若不使用proxy，直接置proxyPrefix:""
@@ -148,9 +149,10 @@
                     var data = drawingPad.getMergedData(function(a){
                         // alert(a);
                         console.log(a);
+                        window.open(a,"_blank");
+
                     },8000);
                     // alert(data);
-                    // window.open(data,"_blank");
                 });
 
                 // forDebug
