@@ -1,0 +1,23 @@
+{
+  "name": "ottomao.github.io",
+  "version": "1.0.0",
+  "description": "ottomao.github.io =================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ottomao/ottomao.github.io.git"
+  },
+  "author": "Otto Mao <ottomao@gmail.com> (http://ottomao.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ottomao/ottomao.github.io/issues"
+  },
+  "homepage": "https://github.com/ottomao/ottomao.github.io",
+  "dependencies": {
+    "juicer": "^0.6.6-stable",
+    "markdown": "^0.5.0"
+  }
+}

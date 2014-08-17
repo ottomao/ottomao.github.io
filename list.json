@@ -1,0 +1,9 @@
+[
+	{
+		"file":"./posts/responsive_image.md",
+		"basename":"responsive_image",
+		"title":"新时代的响应式图片",
+		"desc":"从图片压缩、格式、网络环境、屏幕参数等角度出发，探讨跨终端的响应式图片策略",
+		"isEng":false
+	}
+]
