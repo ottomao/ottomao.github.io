@@ -5,5 +5,12 @@
 		"title":"新时代的响应式图片",
 		"desc":"从图片压缩、格式、网络环境、屏幕参数等角度出发，探讨跨终端的响应式图片策略",
 		"isEng":false
+	},
+	{
+		"file":"./posts/knock_to_interact.md",
+		"basename":"knock_to_interact",
+		"title":"敲一敲实现多屏互动",
+		"desc":"自制的一些demo，展示炫酷的多屏互动",
+		"isEng":false
 	}
 ]
