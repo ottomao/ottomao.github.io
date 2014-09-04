@@ -1,0 +1,58 @@
+<html>
+<head>
+	<script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/leapjs/0.4.3/leap.min.js"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+	<section>
+		<p><a href="/">&lt;&lt;Otto's BLog</a></p>
+	</section>
+
+	<h3>连接<a href="https://www.leapmotion.com" target="_blank">Leapmotion</a>，对着它【剪刀石头布】，看你能赢几次！</h3>
+	<h3>Rock-Paper-Scissors: You v.s. <a href="https://www.leapmotion.com" target="_blank">LeapMotion</a></h3>
+	<h5>By Otto Mao</h5>
+	<div class="J_count"></div>
+	<div class="J_gesture J_rock"><img src="http://gtms03.alicdn.com/tps/i3/T17f.AFsBbXXaOdaMD-326-351.png" /></div>	
+	<div class="J_gesture J_scissors"><img src="http://gtms01.alicdn.com/tps/i1/T1DaEvFtRdXXa9dIkA-429-414.png" /></div>	
+	<div class="J_gesture J_paper"><img src="http://gtms04.alicdn.com/tps/i4/T1RvwtFE4dXXbvVO7O-438-374.png" /></div>
+
+
+	<section>
+		<p><a href="/">&lt;&lt;Otto's BLog</a></p>
+	</section>
+
+	<footer>
+		<p><small>Hosted on GitHub Pages &mdash; Theme Based On <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+	</footer>
+<script>
+
+var controllerOptions = {enableGestures: true};
+
+Leap.loop(controllerOptions, function(frame) {
+	var fingers = frame.fingers,
+		fingerCount = 0;
+
+	if(!fingers.length) return;
+
+	for(var i = 0 ; i <fingers.length ; i++){
+		if(fingers[i].length > 30){
+			++fingerCount;
+		}
+	}
+
+	$(".J_gesture").hide();
+
+	$(".J_count").html(fingerCount);
+	
+	if(fingerCount == 0 || fingerCount == 1){ //rock
+		$(".J_paper").show();
+	}else if(fingerCount > 1 && fingerCount <= 3){ //scissors
+		$(".J_rock").show();
+	}else{ //paper
+		$(".J_scissors").show();
+	}
+});
+</script>
+</body>
