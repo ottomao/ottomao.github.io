@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<section class="list">
+	<section>
 		<h2>Otto Mao</h2>
 
 		<h3>About</h3>
@@ -24,7 +24,7 @@
 
 		<h3>Products / Demo</h3>
 
-		<ul>
+		<ul class="articleList">
 			<li><a href="http://www.traceshot.com" target="_blank">Traceshot</a>, an iOS app for web developers to evaluate the web page loading performance visually</li>
 			<li><a href="https://github.com/alipay-ct-wd/anyproxy" target="_blank">Anyproxy</a>, A fully configurable proxy in NodeJS, which can handle HTTPS requests perfectly.(main contributor)</li>
 			<li><a href="https://github.com/ottomao/bugfreejs" target="_blank">bugFreeJS</a>, 佛祖保佑 永无bug。自动添加神注释的npm模块。</li>
@@ -33,7 +33,7 @@
 
 		<h3>Posts in Chinese</h3>
 
-		<ul>
+		<ul class="articleList">
 			{@each list as item}
 			<li><a href="/${item.basename}.html">${item.title}</a>, ${item.desc}</li>
 			{@/each}
