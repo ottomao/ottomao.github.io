@@ -13,10 +13,13 @@ for(var i = 0; i < list.length ; ++i){
 		basename = post.basename,
 		html     = markdown.toHTML(fs.readFileSync(post.file,{encoding:"utf8"}));
 
-    var pageHTML = juicer(postTpl,{title:post.title + "- Otto's Blog" || "Otto's Blog",content:html});
+	if(basename){
+	    var pageHTML = juicer(postTpl,{title:post.title + "- Otto's Blog" || "Otto's Blog",content:html});
 
-    fs.writeFileSync( basename + ".html" ,pageHTML);
-    console.log(basename + ' - done');
+	    fs.writeFileSync( basename + ".html" ,pageHTML);
+	    console.log(basename + ' - done');
+		
+	}
 }
 
 var indexHTML = juicer(indexTpl,{list:list});
