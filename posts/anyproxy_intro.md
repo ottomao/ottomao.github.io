@@ -60,26 +60,27 @@ AnyProxy的开放式代理服务器设计
 实践和sample
 ---------------
 
-为了帮助你更快地编写规则（rule）文件，我们提供了些sample：
+为了帮助你更快地编写规则（rule）文件，我们提供了些sample([点击访问](https://github.com/alibaba/anyproxy/tree/master/rule_sample))：
 
-* **[rule__blank.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule__blank.js)**,
+* rule__blank.js
     * 空白的规则文件模板，和一些注释
-* **[rule_adjust_response_time.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_adjust_response_time.js)**
+* rule_adjust_response_time.js
     * 把所有的响应延迟1500毫秒
-* **[rule_allow_CORS.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_allow_CORS.js)**
+* rule_allow_CORS.js
     * 为ajax请求增加跨域头
-* **[rule_intercept_some_https_requests.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_intercept_some_https_requests.js)**
+* rule_intercept_some_https_requests.js
     * 截获github.com的https请求，再在最后加点文字
-* **[rule_remove_cache_header.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_remove_cache_header.js)**
+* rule_remove_cache_header.js
     * 去除响应头里缓存相关的头
-* **[rule_replace_request_option.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_replace_request_option.js)**
+* rule_replace_request_option.js
     * 在请求发送到服务端前对参数做一些调整
-* **[rule_replace_response_data.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_replace_response_data.js)**
+* rule_replace_response_data.js
     * 修改响应数据
-* **[rule_replace_response_status_code.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_replace_response_status_code.js)**
+* rule_replace_response_status_code.js
     * 改变服务端响应的http状态码
-* **[rule_use_local_data.js](https://github.com/alibaba/anyproxy/blob/master/rule_sample/rule_use_local_data.js)**
+* rule_use_local_data.js
     * 把响应映射到本地
+
 
 
 界面
