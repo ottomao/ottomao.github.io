@@ -17,7 +17,7 @@
 		"file":"./posts/anyproxy_intro.md",
 		"basename":"anyproxy_intro",
 		"title":"代理服务器的新轮子：anyproxy",
-		"desc":"我们写了一个与众不同的代理服务器，全流程开放，分分钟搞定各种调试需求",
+		"desc":"我们写了一个与众不同的代理服务器，全流程开放，分分钟搞定各种调试需求。这里讲解设计初衷及方法。",
 		"isEng":false
 	}
 ]
