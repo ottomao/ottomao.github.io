@@ -85,5 +85,3 @@ Ref:
 * [Choosing A Responsive Image Solution](http://www.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/)
 * Wikipedia : [Portable Network Graphics](http://en.wikipedia.org/wiki/Portable_Network_Graphics) [jpeg](http://en.wikipedia.org/wiki/JPEG#Typical_usage)，部分图片摘自其中
 * [Google Developerse : using webp](https://developers.google.com/speed/webp/docs/using)
-* [月飞 - "感应式图片加载"方案后的总结](http://www.atatech.org/articles/18314)
-
