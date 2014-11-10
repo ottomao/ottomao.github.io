@@ -1,6 +1,6 @@
 ## 代理服务器的新轮子：anyproxy
 
-是的，我们又写了一个代理服务器，基于nodeJS，取名 **anyproxy**（[项目主页](https://github.com/alibaba/anyproxy)）。
+是的，我们又写了一个代理服务器，基于Node.js，取名 **anyproxy**（[项目主页](https://github.com/alibaba/anyproxy)）。
 
 ![anyproxy](https://i.alipayobjects.com/i/ecmng/png/201409/3NKRCRk2Uf.png_250x.png)
 
